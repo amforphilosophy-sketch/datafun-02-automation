@@ -1,7 +1,7 @@
-"""src/datafun/app_case.py - Project script (example).
+"""src/datafun/app_ahmad_mohmand.py - my modified Project script (example).
 
-Author: Denise Case
-Date: 2026-04
+Author: Ahmad Mohmand
+Date: 2026-05
 
   Practice key Python skills related to:
     - imports
@@ -20,7 +20,7 @@ Date: 2026-04
 
   Terminal command to run this file from the root project folder:
 
-    uv run python -m datafun.app_case
+    uv run python -m datafun.app_ahmad_mohmand
 
 OBS:
   Don't edit this file - it should remain a working example.
