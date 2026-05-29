@@ -369,3 +369,31 @@
 2026-05-28 22:17:35 | INFO | P05 | ========================
 2026-05-28 22:17:35 | INFO | P05 | Generated 3 worksheets successfully!
 2026-05-28 22:17:35 | INFO | P05 | ========================
+2026-05-28 22:38:24 | INFO | P05 | === RUN START ===
+2026-05-28 22:38:24 | INFO | P05 | project=P05
+2026-05-28 22:38:24 | INFO | P05 | repo_dir=datafun-02-automation
+2026-05-28 22:38:24 | INFO | P05 | python=3.14.5
+2026-05-28 22:38:24 | INFO | P05 | os=Darwin 25.4.0
+2026-05-28 22:38:24 | INFO | P05 | shell=zsh
+2026-05-28 22:38:24 | INFO | P05 | cwd=.
+2026-05-28 22:38:24 | INFO | P05 | github_actions=False
+2026-05-28 22:38:24 | INFO | P05 | ========================
+2026-05-28 22:38:24 | INFO | P05 | START main()
+2026-05-28 22:38:24 | INFO | P05 | ========================
+2026-05-28 22:38:24 | INFO | P05 | Reading config from: problem_set_config_ahmad_mohmand.json
+2026-05-28 22:38:24 | INFO | P05 | Config loaded with 3 subjects
+2026-05-28 22:38:24 | INFO | P05 | ========================
+2026-05-28 22:38:24 | INFO | P05 | Building worksheet for subject: algebra
+2026-05-28 22:38:24 | INFO | P05 | ========================
+2026-05-28 22:38:24 | INFO | P05 | Wrote file: worksheet_algebra_ahmad_mohmand.txt
+2026-05-28 22:38:24 | INFO | P05 | ========================
+2026-05-28 22:38:24 | INFO | P05 | Building worksheet for subject: geometry
+2026-05-28 22:38:24 | INFO | P05 | ========================
+2026-05-28 22:38:24 | INFO | P05 | Wrote file: worksheet_geometry_ahmad_mohmand.txt
+2026-05-28 22:38:24 | INFO | P05 | ========================
+2026-05-28 22:38:24 | INFO | P05 | Building worksheet for subject: statistics
+2026-05-28 22:38:24 | INFO | P05 | ========================
+2026-05-28 22:38:24 | INFO | P05 | Wrote file: worksheet_statistics_ahmad_mohmand.txt
+2026-05-28 22:38:24 | INFO | P05 | ========================
+2026-05-28 22:38:24 | INFO | P05 | Generated 3 worksheets successfully!
+2026-05-28 22:38:24 | INFO | P05 | ========================

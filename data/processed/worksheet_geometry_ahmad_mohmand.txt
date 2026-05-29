@@ -4,8 +4,8 @@ Generated: 2026-05-28
 
 Instructions: Show your work for each of the 5 problems below.
 
-Problem 1: Find the area of a rectangle with length 9 and width 7.
-Problem 2: Find the area of a rectangle with length 4 and width 19.
-Problem 3: Find the area of a rectangle with length 6 and width 16.
-Problem 4: Find the area of a rectangle with length 13 and width 4.
-Problem 5: Find the area of a rectangle with length 15 and width 18.
+Problem 1: Find the area of a rectangle with length 16 and width 14.
+Problem 2: Find the area of a rectangle with length 6 and width 10.
+Problem 3: Find the area of a rectangle with length 17 and width 14.
+Problem 4: Find the area of a rectangle with length 14 and width 16.
+Problem 5: Find the area of a rectangle with length 4 and width 10.
