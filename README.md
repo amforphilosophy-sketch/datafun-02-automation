@@ -193,3 +193,25 @@ Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
 ```
 
 ![VS Code When Running](./docs/images/vscode_when_running.png)
+
+## My Modification (Phase 4)
+
+**Author:** Ahmad Saleem Mohmand
+**File:** `src/datafun/app_ahmad_mohmand.py`
+**Run command:** `uv run python -m datafun.app_ahmad_mohmand`
+
+### What I changed
+I copied the instructor example (`app_case.py`) to my own file (`app_ahmad_mohmand.py`) and replaced the hobby-themed data with subjects from my own classroom teaching:
+
+- Renamed the global constant `PET_LIST` → `SUBJECT_LIST`
+- Renamed the loop variable `pet_name` → `subject_name`
+- Changed the list values from `["dog", "cat", "fish"]` → `["algebra", "geometry", "statistics"]`
+
+### Why I made the change
+As a high school math teacher, I wanted the example to model data I actually work with. Repurposing the list demonstrates that the same automation pattern — iterating over a list and generating one output file per item — can be applied to any domain. This is a small but real step toward using Python to automate classroom tasks (e.g., generating one worksheet or report per subject).
+
+### What I observed
+When I ran the modified file, the for-loop function created `case_algebra.txt`, `case_geometry.txt`, and `case_statistics.txt` in `data/processed/` instead of the original pet files. The list comprehension function picked up the same change automatically, producing `case_favorite_algebra.txt`, `case_favorite_geometry.txt`, and `case_favorite_statistics.txt`. The program completed with `Executed successfully!` and no errors.
+
+### What I learned
+A small change to a single list propagates through every function that reads it. This shows the value of using a named constant once, at the top of the file, rather than hard-coding values throughout — it makes the code reusable for new contexts with minimal effort.
