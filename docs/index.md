@@ -58,3 +58,43 @@ This tool provides significant value for math educators by:
 The worksheet generator demonstrates practical Python skills including random number generation, file I/O, datetime formatting, and modular function design. Most importantly, it solves a real problem that math teachers face daily: creating varied, quality practice materials efficiently.
 
 ---
+
+## Custom Project (Phase 5): Random Math Problem-Set Generator
+
+**Author:** Ahmad Saleem Mohmand
+**File:** `src/datafun/problem_set_generator_ahmad_mohmand.py`
+**Config:** `data/problem_set_config_ahmad_mohmand.json`
+**Run command:** `uv run python -m datafun.problem_set_generator_ahmad_mohmand`
+
+### Project Overview
+This custom project applies the automation techniques from the example project (`app_case.py`) to a new problem drawn from my own teaching practice as a high school math teacher. It generates **randomized practice worksheets** for three subjects — algebra, geometry, and statistics — with one worksheet per subject and a configurable number of problems per worksheet.
+
+### Skills Applied From the Example
+The custom project reuses every repetition pattern demonstrated in the example:
+
+- **for loop over a list** — iterating over the list of subjects from the config
+- **list comprehension** — building the list of random values for the statistics problem
+- **while loop with a counter** — numbering the problems on each worksheet (1, 2, 3, …)
+- **writing text files** — saving one worksheet per subject to `data/processed/`
+- **logging, pathlib, type hints, Final constants, main function, conditional execution guard** — the same professional Python conventions modeled by the example
+
+### New Skills Introduced
+Beyond the example, the project introduces:
+
+- **`json` module** — reads project settings from an external configuration file rather than hard-coding them in the script
+- **`random` module** — produces a different worksheet every run, which is the point of a practice generator
+- **`datetime` module** — stamps each generated worksheet with the date it was created
+- **dispatch dictionary** — maps each subject name to its problem-generator function, keeping the main loop short and extensible (adding a new subject only requires adding one entry)
+
+### How It Works
+The script follows four clear stages:
+
+1. **Read the config.** `read_config()` opens the JSON file at `data/problem_set_config_ahmad_mohmand.json` and returns a dictionary holding the title, author, list of subjects, problems-per-worksheet count, and a difficulty range.
+2. **Loop over the subjects.** A `for` loop iterates over the list of subjects from the config.
+3. **Build each worksheet.** `build_worksheet()` uses a `while` loop with a counter to generate N numbered problems, calling the appropriate problem-generator function for the subject (looked up in the `PROBLEM_GENERATORS` dispatch dictionary).
+4. **Write each worksheet to its own file** in `data/processed/`, named `worksheet_<subject>_ahmad_mohmand.txt`.
+
+### Example Output
+A generated algebra worksheet looks like:
+
+```text

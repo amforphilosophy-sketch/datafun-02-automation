@@ -1,0 +1,12 @@
+{
+  "title": "Math Practice Worksheets",
+  "author": "Ahmad Saleem Mohmand",
+  "subjects": ["algebra", "geometry", "statistics"],
+  "problems_per_worksheet": 5,
+  "difficulty": {
+    "coefficient_min": 1,
+    "coefficient_max": 12,
+    "constant_min": 1,
+    "constant_max": 20
+  }
+}

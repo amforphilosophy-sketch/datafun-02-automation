@@ -215,3 +215,30 @@ When I ran the modified file, the for-loop function created `case_algebra.txt`, 
 
 ### What I learned
 A small change to a single list propagates through every function that reads it. This shows the value of using a named constant once, at the top of the file, rather than hard-coding values throughout — it makes the code reusable for new contexts with minimal effort.
+## Custom Project (Phase 5): Random Math Problem-Set Generator
+
+A custom Python project that applies the example's automation techniques to a new problem from my own teaching practice: generating randomized math practice worksheets.
+
+**Hosted documentation:** https://amforphilosophy-sketch.github.io/datafun-02-automation/
+
+**Run command:**
+```bash
+uv run python -m datafun.problem_set_generator_ahmad_mohmand
+```
+
+### What it does
+Reads a JSON configuration file (`data/problem_set_config_ahmad_mohmand.json`) listing math subjects (algebra, geometry, statistics) and a difficulty range, then generates one practice worksheet per subject with N randomized problems. Each worksheet is written as a text file to `data/processed/`.
+
+### How to run it
+1. Make sure your Python environment is set up (`uv venv` + `uv sync`)
+2. From the project root, run:
+   `uv run python -m datafun.problem_set_generator_ahmad_mohmand`
+3. Check the generated worksheets in `data/processed/`:
+   - `worksheet_algebra_ahmad_mohmand.txt`
+   - `worksheet_geometry_ahmad_mohmand.txt`
+   - `worksheet_statistics_ahmad_mohmand.txt`
+
+Each run produces fresh random problems, so the worksheets are different every time.
+
+### Where to find the details
+The full Custom Project narrative — skills applied, new skills introduced, how the code is structured, example output, and design notes — is on the **hosted documentation site** linked above (also viewable as `docs/index.md` in the repo). The Python source is at `src/datafun/problem_set_generator_ahmad_mohmand.py`.
